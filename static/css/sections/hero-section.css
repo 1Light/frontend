@@ -11961,6 +11961,7 @@ textarea.form-control-lg {
   color: #0281FB;
 }
 .hero-section .image-box .content-box #sub {
+  text-transform: none;
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 2rem;

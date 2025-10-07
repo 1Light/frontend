@@ -132,7 +132,7 @@
   .overview {
     position: relative;
     padding: 1.15rem 1.2rem 1.25rem;
-    background: rgba(255,255,255,.85);
+    background: $gray-100;
     border-radius: 16px;
     border: 1px solid rgba(13,110,253,.10);
     box-shadow:
@@ -154,7 +154,8 @@
     }
 
     .section-label {
-      display: inline-block;
+      display: block;
+      text-align: center;
       font-size: 1.5rem;
       font-weight: 800;
       margin-bottom: .5rem;
@@ -167,13 +168,14 @@
         height: 2px;
         width: 0;
         margin-top: .45rem;
+        margin-left: 37%;
         background: linear-gradient(90deg, #6f42c1, #0d6efd);
         border-radius: 2px;
         transition: width .45s ease;
       }
     }
 
-    p { margin: 0; font-size: 1rem; }
+    p { margin: 0; font-size: 1rem; text-align: justify;}
 
     /* animate accent when parent section scrolls into view (on hover/focus as fallback) */
     &:hover .section-label::after,
@@ -192,6 +194,7 @@
       border: 1px solid rgba(0,0,0,.06);
       box-shadow: 0 10px 26px rgba(0,0,0,.08);
       transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      background-color: $gray-100;
 
       &.grad      { border-left: 4px solid #6f42c1; }
       &.undergrad { border-left: 4px solid #0d6efd; }
