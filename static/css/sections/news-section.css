@@ -11901,7 +11901,7 @@ textarea.form-control-lg {
 .news-section {
   padding: 2rem 0rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  background-color: #e9ecef;
+  background: linear-gradient(to top, #EEF9FB 30%, #e9ecef 70%);
 }
 .news-section h1 {
   color: #0281FB;

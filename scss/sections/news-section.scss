@@ -5,7 +5,7 @@
 .news-section {
   padding: 2rem 0rem; 
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  background-color: $gray-200;
+  background: linear-gradient(to top, #EEF9FB 30%, $gray-200 70%);
 
   h1 {
     color: $primary;
