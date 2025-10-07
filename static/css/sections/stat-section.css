@@ -11899,10 +11899,12 @@ textarea.form-control-lg {
 }
 
 .stat-section {
-  margin-bottom: 5rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  padding-top: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
   background-color: #EEF9FB;
+  border-bottom-left-radius: 130px 128px;
+  border-bottom-right-radius: 130px 128px;
 }
 .stat-section h1 {
   color: #0281FB;

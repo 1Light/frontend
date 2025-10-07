@@ -3,8 +3,9 @@
 @use '../components/mixins' as *;
 
 .research-section {
+  margin-top: 4rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  background-color: #EEF9FB;
+  background-color: $white;
 
       h1 {
         color: $primary;
@@ -38,6 +39,7 @@
     // headline with classy underline
     padding: 2rem;
     border-radius: 15px;
+    background-color: #EEF9FB;
 
     // responsive grid replaces manual flex math
     .research-grid {

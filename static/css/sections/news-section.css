@@ -11899,9 +11899,12 @@ textarea.form-control-lg {
 }
 
 .news-section {
-  padding: 2rem 0rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   background: linear-gradient(to top, #EEF9FB 30%, #e9ecef 70%);
+  border-top-left-radius: 130px 157px;
+  border-top-right-radius: 130px 157px;
 }
 .news-section h1 {
   color: #0281FB;

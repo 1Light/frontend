@@ -11899,8 +11899,9 @@ textarea.form-control-lg {
 }
 
 .research-section {
+  margin-top: 4rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  background-color: #EEF9FB;
+  background-color: #fff;
 }
 .research-section h1 {
   color: #0281FB;
@@ -11931,6 +11932,7 @@ textarea.form-control-lg {
 .research-section .container {
   padding: 2rem;
   border-radius: 15px;
+  background-color: #EEF9FB;
 }
 .research-section .container .research-grid {
   display: grid;

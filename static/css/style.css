@@ -12150,9 +12150,12 @@ body {
 }
 
 .news-section {
-  padding: 2rem 0rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   background: linear-gradient(to top, #EEF9FB 30%, #e9ecef 70%);
+  border-top-left-radius: 130px 157px;
+  border-top-right-radius: 130px 157px;
 }
 .news-section h1 {
   color: #0281FB;
@@ -12303,8 +12306,9 @@ body {
 }
 
 .research-section {
+  margin-top: 4rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  background-color: #EEF9FB;
+  background-color: #fff;
 }
 .research-section h1 {
   color: #0281FB;
@@ -12335,6 +12339,7 @@ body {
 .research-section .container {
   padding: 2rem;
   border-radius: 15px;
+  background-color: #EEF9FB;
 }
 .research-section .container .research-grid {
   display: grid;
@@ -12436,10 +12441,12 @@ body {
 }
 
 .stat-section {
-  margin-bottom: 5rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  padding-top: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
   background-color: #EEF9FB;
+  border-bottom-left-radius: 130px 128px;
+  border-bottom-right-radius: 130px 128px;
 }
 .stat-section h1 {
   color: #0281FB;
