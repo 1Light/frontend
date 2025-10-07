@@ -1,0 +1,21 @@
+// Import the Overriden Bootstrap Variables
+@use 'custom';
+
+// Import the Components
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+
+// Import the Sections
+@use 'sections/navbar.scss';
+@use 'sections/hero-section.scss';
+@use 'sections/news-section.scss';
+@use 'sections/research-section.scss';
+@use 'sections/stat-section.scss';
+@use 'sections/faculty-section.scss';
+@use 'sections/sticker-section.scss';
+@use 'sections/events-section.scss';
+@use 'sections/contact-section.scss';
+@use 'sections/footer.scss';
+@use 'sections/base.scss';
+@use 'sections/intro-splash.scss';

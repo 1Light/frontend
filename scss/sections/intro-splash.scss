@@ -1,0 +1,51 @@
+@use '../custom' as *;
+
+/* Overlay */
+.intro-splash{
+  position:fixed; inset:0; z-index:9999;
+  display:grid; place-items:center;
+  background:$primary; color:#fff;
+  opacity:1; visibility:visible; pointer-events:auto;
+  transition:opacity .25s ease, visibility .25s ease;
+  &.is-hidden{ opacity:0; visibility:hidden; pointer-events:none; }
+}
+body.is-intro-open{ overflow:hidden; }
+
+.intro-inner{ text-align:center; padding:1.25rem; }
+
+/* Title: clip bottom so letters rise in cleanly */
+.intro-title{
+  display:inline-block;
+  margin:0;
+  font-weight:800;
+  font-size:clamp(1.8rem,5vw,3rem);
+  letter-spacing:.01em;
+  line-height:1.1;
+  overflow:hidden;
+  white-space:pre-wrap;
+
+  /* timing variables that JS will set */
+  --delay-step: 16ms;     /* fallback */
+  --char-dur: 280ms;      /* fallback */
+}
+
+/* Each letter rises up; delays create the left→right sweep */
+.intro-title .char{
+  display:inline-block;
+  opacity:0;
+  transform:translateY(1em);
+  will-change:transform,opacity;
+  animation:rise-up var(--char-dur) cubic-bezier(.2,.9,.25,1) forwards;
+  animation-delay:calc(var(--i) * var(--delay-step));
+}
+
+@keyframes rise-up{
+  0%   { opacity:0; transform:translateY(1em); }
+  60%  { opacity:1; transform:translateY(-.08em); }
+  100% { opacity:1; transform:translateY(0); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .intro-title .char{ animation:none !important; opacity:1 !important; transform:none !important; }
+}

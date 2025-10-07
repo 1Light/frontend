@@ -1,0 +1,35 @@
+@use '../custom' as *;
+
+@mixin gradient {
+    background: linear-gradient(to right, #0065E6, #04CBE4);
+}
+
+@mixin reveal($distance: 40px, $duration: 0.8s, $easing: ease) {
+  opacity: 0;
+  transform: translateY($distance);
+  transition: opacity $duration $easing, transform $duration $easing;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@mixin reveal-left($distance: 40px) {
+  opacity: 0;
+  transform: translateX(-$distance);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  &.visible { opacity: 1; transform: translateX(0); }
+}
+
+@mixin reveal-right($distance: 40px) {
+  opacity: 0;
+  transform: translateX($distance);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  &.visible { opacity: 1; transform: translateX(0); }
+}
+
+/* Utilities that your HTML can use */
+.reveal       { @include reveal(); }
+.reveal-left  { @include reveal-left(); }
+.reveal-right { @include reveal-right(); }

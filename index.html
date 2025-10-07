@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science Department</title>
+
+    <link rel="stylesheet" href="static/css/fontawesome.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/images/favicon.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css" />
+    </head>
+<body>
+
+  <!-- Intro Splash -->
+<div id="introSplash" class="intro-splash" aria-hidden="true">
+  <div class="intro-inner">
+    <h1 class="intro-title" id="introText">POWER FROM KNOWLEDGE TO SERVE</h1>
+  </div>
+</div>
+    <!------------------------------------------------------------------------------>
+    <!------------------------------- Header Section ------------------------------->
+    <!------------------------------------------------------------------------------>
+
+    <header class="header-section fixed-top">
+        <div class="logo-section py-3">
+            <div class="container d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3">
+
+                <!-- Logo / Brand -->
+                <a class="logo d-flex align-items-center text-decoration-none" href="#">
+                    <img src="static/images/image.svg" alt="MBZUAI Logo" width="40" height="40" class="me-2">
+                </a>
+            </div>
+        </div>
+
+    <!--  Navigation tabs -->
+        <div class="tabs-section">
+            <div>
+                <nav aria-label="Main navigation">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link px-2" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#faculty">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#blog">Blog</a></li>
+                    <li class="nav-item rounded-pill d-flex justify-content-center align-items-center px-4 py-2">
+                        <a class="apply-button px-3 rounded-pill" href="#apply"><p class="text">Apply</p></a>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!------------------------------------------------------------------------------>
+    <!--------------------------------- Hero Section ------------------------------->
+    <!------------------------------------------------------------------------------>
+<section class="hero-section">
+  <div class="image-box">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="static/images/Video.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div> <!-- this is required -->
+
+    <div class="content-box">
+      <h1 class="main">MBZU<span>AI<span></h1>
+      <h3>Computer Science Department</h3>
+      <p>Advancing research, education, and innovation in computer science.</p>
+      <div class="hero-actions mt-4">
+        <a href="#programs" class="btn btn-primary rounded-pill px-4 py-2">Explore Programs</a>
+        <a href="#research" class="btn btn-outline-light rounded-pill px-4 py-2 ms-3">Discover Research</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!------------------------------------------------------------------------------>
+    <!------------------------------- Sticker Section ------------------------------>
+    <!------------------------------------------------------------------------------>
+<section class="sticker-section" id="sticker">
+    <h1>Department Overview</h1>
+  <div class="container">
+    <div class="sticker-grid">
+      <!-- LEFT -->
+      <article class="profile reveal-left">
+        <div class="img-box">
+          <img src="static/images/chair.jpg" alt="Xiaosong Ma" />
+          <div class="content-box">
+            <h3 class="name">Xiaosong Ma</h3>
+            <p class="title">Department Chair and Professor of Computer Science</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- CENTER -->
+      <article class="overview reveal-right">
+        <h4 class="section-label">Overview</h4>
+        <p>In the age of AI, computer science (CS) continues to be the foundational engine driving
+          innovation, understanding, and progress across the computing landscape. From the
+          mathematical underpinnings of algorithms to the infrastructure that powers large-scale model
+          training and deployment, CS provides the essential knowledge and tools that propel the AI
+          revolution. Our department is committed to advancing research and education, with a focus on
+          building efficient, scalable, sustainable, and trustworthy technologies to meet the evolving
+          challenges of computing.</p>
+      </article>
+
+      <!-- RIGHT -->
+      <aside class="degree-cards reveal-right">
+        <div class="degree-card grad">
+          <h5 class="degree-title">Graduate Degrees</h5>
+          <ul class="degree-list">
+            <li>Master of Science in Computer Science</li>
+            <li>Doctor of Philosophy in Computer Science</li>
+          </ul>
+        </div>
+        <div class="degree-card undergrad">
+          <h5 class="degree-title">Undergraduate Degree</h5>
+          <ul class="degree-list">
+            <li>Bachelor of Science in Artificial Intelligence (Engineering)</li>
+            <li>Bachelor of Science in Artificial Intelligence (Business)</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+    <!------------------------------------------------------------------------------>
+    <!--------------------------------- News Section ------------------------------->
+    <!------------------------------------------------------------------------------>
+
+    <section class="news-section reveal-left">
+        <h1>Stay Up to Date</h1>
+        <div class="container">
+            <div class="card-box">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="static/images/news1.jpg" alt="News 1 Image">
+                    </div>
+                    <span class="date-box">
+                        September 22, 2025
+                    </span>
+                    <div class="content-box">
+                        <h4>
+                            MBZUAI Researchers Develop New AI Framework for Arabic Large Language Models
+                        </h4>
+                        <p>A team from the Computer Science Department has unveiled a scalable architecture that significantly improves Arabic LLM performance.
+                            The research emphasizes language diversity and cultural context understanding in generative AI.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="static/images/news2.jpg" alt="News 2 Image">
+                    </div>
+                    <span class="date-box">
+                        August 15, 2025
+                    </span>
+                    <div class="content-box">
+                        <h4>
+                            Computer Vision Lab Publishes Breakthrough in Efficient Object Detection
+                        </h4>
+                        <p>The MBZUAI Computer Vision Lab achieved a 30% reduction in compute time for
+                            real-time detection models without sacrificing accuracy, paving the way for more sustainable AI deployment.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-box">
+                        <img src="static/images/news3.jpg" alt="News 3 Image">
+                    </div>
+                    <span class="date-box">
+                        July 3, 2025
+                    </span>
+                    <div class="content-box">
+                        <h4>
+                            Graduate Students Win Best Paper Award at NeurIPS 2025
+                        </h4>
+                        <p>MBZUAI CS graduate researchers received top honors at NeurIPS for their work on adaptive reinforcement
+                            learning in dynamic environments, marking a milestone for student-led innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------>
+    <!--------------------------------- Stat Section ------------------------------->
+    <!------------------------------------------------------------------------------>
+
+<section class="stat-section reveal-right">
+  <h1>Statistics & Academic Activity</h1>
+  <div class="container">
+    <div class="stat-circles">
+      <div class="circle" aria-label="Citations: 10,970">
+        <i class="fa-solid fa-flag" aria-hidden="true"></i>
+        <p class="value">10,970</p>
+        <p class="content">Citations</p>
+      </div>
+
+      <div class="circle" aria-label="h-index: 50">
+        <i class="fa-solid fa-book" aria-hidden="true"></i>
+        <p class="value">50</p>
+        <p class="content">h-index</p>
+      </div>
+
+      <div class="circle" aria-label="Articles: 462">
+        <i class="fa-solid fa-file" aria-hidden="true"></i>
+        <p class="value">462</p>
+        <p class="content">Articles</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+    <!------------------------------------------------------------------------------>
+    <!------------------------------- Research Section ----------------------------->
+    <!------------------------------------------------------------------------------>
+
+<section class="research-section reveal">
+<h1>Research & Development</h1>
+  <div class="container">
+
+    <div class="research-grid">
+      <div class="research-box">
+        <div class="img-box">
+          <img src="static/images/ml.jpg" alt="Machine Learning & Optimization">
+        </div>
+        <div class="content-box">
+          <h4>Machine Learning &amp; Optimization</h4>
+          <p>Developing efficient algorithms and scalable architectures that push the boundaries of intelligent systems.</p>
+          <a class="read-more" href="#">Read more <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="research-box">
+        <div class="img-box">
+          <img src="static/images/cv.jpg" alt="Computer Vision">
+        </div>
+        <div class="content-box">
+          <h4>Computer Vision</h4>
+          <p>From autonomous vehicles to medical image analysis, building vision systems that perceive, interpret, and reason about the world.</p>
+          <a class="read-more" href="#">Read more <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="research-box">
+        <div class="img-box">
+          <img src="static/images/nlp.jpg" alt="Natural Language Processing">
+        </div>
+        <div class="content-box">
+          <h4>Natural Language Processing</h4>
+          <p>Advancing multilingual language models and conversational AI to enable deeper understanding, reasoning, and accessibility.</p>
+          <a class="read-more" href="#">Read more <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+
+      <div class="research-box">
+        <div class="img-box">
+          <img src="static/images/robot.jpg" alt="Robotics & Intelligent Systems">
+        </div>
+        <div class="content-box">
+          <h4>Robotics &amp; Intelligent Systems</h4>
+          <p>Designing autonomous systems that learn, adapt, and collaborate safely in dynamic environments through perception and control.</p>
+          <a class="read-more" href="#">Read more <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!------------------------------------------------------------------------------>
+    <!-------------------------------- Faculty Section ----------------------------->
+    <!------------------------------------------------------------------------------>
+
+    <section class="faculty-section reveal">
+        <div class="container">
+            <h1>Meet the Faculty</h1>
+
+            <div id="facultyCarousel" class="carousel">
+            <div class="carousel-inner">
+
+                <!-- Item 1 -->
+                <div class="carousel-item active">
+                <div class="card text-center">
+                    <div class="img-wrapper">
+                    <img src="static/images/prof1.jpg" class="d-block w-100" alt="Prof. Chun Jason Xue">
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Dr. Abdulrahman Mahmoud</h5>
+                    <p class="card-text">Assistant Professor of Computer Science</p>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="carousel-item">
+                <div class="card text-center">
+                    <div class="img-wrapper">
+                    <img src="static/images/prof2.jpg" class="d-block w-100" alt="Dr. Abdulrahman Mahmoud">
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Prof. Chun Jason Xue</h5>
+                    <p class="card-text">Professor of Computer Science</p>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="carousel-item">
+                <div class="card text-center">
+                    <div class="img-wrapper">
+                    <img src="static/images/prof3.jpg" class="d-block w-100" alt="Dr. Lingqi Yan">
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Dr. Lingqi Yan</h5>
+                    <p class="card-text">Associate Professor of Computer Science</p>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="carousel-item">
+                <div class="card text-center">
+                    <div class="img-wrapper">
+                    <img src="static/images/prof4.jpg" class="d-block w-100" alt="Dr. Joshua Bakita">
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Dr. Joshua Bakita</h5>
+                    <p class="card-text">Assistant Professor of Computer Science</p>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="carousel-item">
+                  <div class="card text-center">
+                      <div class="img-wrapper">
+                      <img src="static/images/prof5.jpg" class="d-block w-100" alt="Dr. Joshua Bakita">
+                      </div>
+                      <div class="card-body">
+                      <h5 class="card-title">Saravanan Thirumuruganathan</h5>
+                      <p class="card-text">Associate Professor of Practice</p>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#facultyCarousel">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Prev</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#facultyCarousel">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------>
+    <!--------------------------------- Events Section ----------------------------->
+    <!------------------------------------------------------------------------------>
+    <section class="events-section reveal">
+    <h1>Upcoming Events</h1>
+  <div class="container">
+    <div class="section-head">
+      <a class="view-all" href="#">All Events <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+
+    <div class="events-layout">
+      <!-- Left: Upcoming (3 rows × 2 columns) -->
+      <div class="events-grid">
+        <!-- Event 1 -->
+        <article class="event-card">
+          <div class="date-badge maize">
+            <span class="month">OCT</span>
+            <span class="day">06</span>
+          </div>
+          <div class="event-body">
+            <h6 class="kicker">Dissertation Defense</h6>
+            <h3 class="title">Making Data More Findable and Reusable</h3>
+            <p class="meta">
+              <time datetime="2025-10-06T11:00">11:00am – 1:00pm</time>
+              <span class="sep">·</span>
+              4941 Beyster Building
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 2 -->
+        <article class="event-card">
+          <div class="date-badge navy">
+            <span class="month">OCT</span>
+            <span class="day">06</span>
+          </div>
+          <div class="event-body">
+            <h6 class="kicker">Dissertation Defense</h6>
+            <h3 class="title">Solutions for Link Rot on the Modern Web</h3>
+            <p class="meta">
+              <time datetime="2025-10-06T13:00">1:00pm – 3:00pm</time>
+              <span class="sep">·</span>
+              3941 Beyster Building
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 3 -->
+        <article class="event-card">
+          <div class="date-badge maize">
+            <span class="month">OCT</span>
+            <span class="day">07</span>
+          </div>
+          <div class="event-body">
+            <h6 class="kicker">Dissertation Defense</h6>
+            <h3 class="title">Efficient Data Access for Irregular Applications</h3>
+            <p class="meta">
+              <time datetime="2025-10-07T14:00">2:00pm – 4:00pm</time>
+              <span class="sep">·</span>
+              3725 Beyster Building
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 4 -->
+        <article class="event-card">
+          <div class="date-badge navy">
+            <span class="month">OCT</span>
+            <span class="day">11</span>
+          </div>
+          <div class="event-body">
+            <h6 class="kicker">Other Event</h6>
+            <h3 class="title">
+              Awakening Intelligence: A Scientific & Philosophical Dialogue in the Era of AI
+            </h3>
+            <p class="meta">
+              <time datetime="2025-10-11T10:00">10:00am – 12:00pm</time>
+              <span class="sep">·</span>
+              Michigan Union, Kuenzel Room (1st Floor)
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 5 -->
+        <article class="event-card">
+          <div class="date-badge maize">
+            <span class="month">OCT</span>
+            <span class="day">12</span>
+          </div>
+          <div class="event-body">
+            <h6 class="kicker">Seminar</h6>
+            <h3 class="title">Frontiers in Multimodal Reasoning</h3>
+            <p class="meta">
+              <time datetime="2025-10-12T15:00">3:00pm – 4:30pm</time>
+              <span class="sep">·</span>
+              EECS 1303
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 6 -->
+        <article class="event-card">
+          <div class="date-badge navy">
+            <span class="month">OCT</span>
+            <span class="day">14</span>
+          </div>
+          <div class="event-body">
+            <h6 class="kicker">Colloquium</h6>
+            <h3 class="title">Learning Systems Under Distribution Shift</h3>
+            <p class="meta">
+              <time datetime="2025-10-14T16:00">4:00pm – 5:00pm</time>
+              <span class="sep">·</span>
+              BBB 1670
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Right: Past History -->
+      <aside class="events-history" aria-label="Past Events">
+        <h2 class="sr-only">Past Events</h2>
+        <ul class="history-list">
+          <li>
+            <a href="#">
+              <span class="hist-date">Sep 28</span>
+              <span class="hist-title">Systems Reading Group: RDMA in Practice</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="hist-date">Sep 23</span>
+              <span class="hist-title">Guest Talk: Robust LLM Serving</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="hist-date">Sep 18</span>
+              <span class="hist-title">Workshop: Fast Vision Transformers</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="hist-date">Sep 12</span>
+              <span class="hist-title">Panel: AI Safety & Policy</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+        <a class="history-all" href="#">Past Events Archive <i class="fa-solid fa-angle-right"></i></a>
+      </aside>
+    </div>
+  </div>
+</section>
+    <!------------------------------------------------------------------------------>
+    <!--------------------------------- Contact Section ---------------------------->
+    <!------------------------------------------------------------------------------>
+<section id="contact" class="contact-section reveal">
+  <div class="container">
+    <header class="contact-head">
+      <h1>Contact Us</h1>
+    </header>
+
+    <div class="contact-layout">
+      <!-- Page-like card with clipped corner -->
+      <div class="contact-card">
+        <form class="contact-form" action="#" method="post" novalidate>
+          <!-- Row 1 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <span class="hint">Please enter your first and last name.</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="hint">We’ll never share your email.</span>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="" selected disabled>Choose a topic</option>
+                <option>Admissions</option>
+                <option>Research</option>
+                <option>Media / Press</option>
+                <option>Collaboration</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="form-group">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <!-- Actions -->
+          <div class="form-actions">
+            <button class="contact-btn" type="submit">Send Message</button>
+            <p class="form-note">By sending, you agree to our <a href="#">privacy policy</a>.</p>
+          </div>
+
+          <!-- Optional success / error state containers -->
+          <div class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- Contact details / sidebar (optional) -->
+      <aside class="contact-side">
+        <h3>Visit us</h3>
+        <p>123 Engineering Way, Hong Kong</p>
+        <p><strong>Email:</strong> <a href="mailto:info@cse.edu">info@cse.edu</a><br>
+           <strong>Phone:</strong> +852 1234 5678</p>
+
+        <div class="hours">
+          <h4>Office Hours</h4>
+          <ul>
+            <li>Mon–Fri: 9:00am – 5:30pm</li>
+            <li>Sat–Sun: Closed</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<!-- Back to Top Button -->
+<button type="button" class="btn btn-primary btn-lg rounded-circle" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+    <!------------------------------------------------------------------------------>
+    <!--------------------------------- Footer Section ----------------------------->
+    <!------------------------------------------------------------------------------>
+    <footer class="site-footer">
+  <div class="container footer-grid">
+    <!-- Column 1: Branding -->
+    <div class="footer-brand">
+      <h2 class="brand-name">Department of Computer Science &amp; Engineering</h2>
+      <p class="tagline">Advancing computing through research, innovation, and collaboration.</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Resources -->
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Student Portal</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i> 123 Engineering Way, Hong Kong</li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@cse.edu">info@cse.edu</a></li>
+        <li><i class="fa-solid fa-phone"></i> +852 1234 5678</li>
+      </ul>
+
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Department of Computer Science &amp; Engineering. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Load full jQuery BEFORE your JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your script LAST -->
+<script src="static/js/home.js"></script>
+<script>
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.header-section');
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+</script>
+</html>

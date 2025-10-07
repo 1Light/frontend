@@ -1,0 +1,162 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+body { margin: 0; }
+
+
+.header-section {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+ 
+    .logo-section {
+
+        .logo {
+
+            img {
+                width: 19rem;
+                height: 5rem;
+            }
+        }
+    }
+
+    .tabs-section {
+        color: $white;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        position: relative;
+        justify-content: center;
+        align-items: flex-end;
+
+        ul.navbar-nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1rem 3.5rem;
+            width: 100%;
+
+              .nav-link, .apply-button {
+                position: relative;
+                color: inherit;              /* keep your white from parent */
+                text-decoration: none;
+                padding: .25rem .5rem;       /* room for the hover pill */
+                border-radius: 9999px;       /* enables the soft pill on hover */
+                transition: transform .2s ease, background-color .25s ease, opacity .2s ease;
+
+                /* animated underline (hidden by default) */
+                &::after {
+                content: "";
+                position: absolute;
+                left: .6rem;               /* indent a touch to look premium */
+                right: .6rem;
+                bottom: -2px;
+                height: 2px;
+                width: 0%;
+                background: rgba(#fff,10);
+                border-radius: 2px;
+                transition: width .28s ease;
+                pointer-events: none;
+                }
+
+                /* hover */
+                &:hover {
+                transform: translateY(-1px);
+                opacity: .95;
+                &::after { width: calc(100% - 1.2rem); }
+                }}
+
+            .apply-button {
+                color: $white;
+                text-decoration: none;
+                display: block;
+
+                .text {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .search-container {              
+            // border: 2px solid $black; 
+            margin-right: 1rem;   
+                   
+            .btn-gradient {
+                width: 42px;
+                height: 42px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;                   
+                transition: transform .25s ease-in-out;
+                border: 2px double $white;
+
+                &:hover { transform: scale(1.05); }
+            }
+
+            .search-form {
+                position: absolute;             
+                right: 50px;  
+                top: 46%;                                         
+                transform: translateY(-50%);    
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                /* collapsed state */
+                max-width: 0;                   
+                opacity: 0;
+                overflow: hidden;
+                white-space: nowrap;
+                pointer-events: none;           
+                transition: max-width .35s ease, opacity .25s ease;
+
+                input {
+                    width: 300px;                 
+                    flex: 0 0 auto;
+
+                    &.form-control:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                &.active {
+                    max-width: 320px;             
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
+        }
+    }
+
+      &.scrolled {
+    background-color: $primary;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15) !important;
+
+    .apply-button {
+                  .text {
+        margin-top: 0px;
+      }
+    }
+
+    .nav-link {
+      color: $white !important;
+    }
+
+    .apply-button {
+        height: 2.3rem;
+        display: block;
+      background-color: $white;
+      color: $primary !important;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

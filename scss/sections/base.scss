@@ -1,0 +1,31 @@
+@use '../custom' as *;
+
+h1 {
+    color: $primary;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  z-index: 1050;
+  display: none; /* hidden initially */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  /* optional hover effect */
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  i {
+    color: #fff;
+    font-size: 1.25rem;
+  }
+}
