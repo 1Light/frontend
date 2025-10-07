@@ -12067,12 +12067,11 @@ textarea.form-control-lg {
 }
 .sticker-section .overview .section-label {
   display: inline-block;
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: #6c757d;
+  font-size: 1.5rem;
+  font-weight: 800;
   margin-bottom: 0.5rem;
   position: relative;
+  color: #0281FB;
 }
 .sticker-section .overview .section-label::after {
   content: "";
@@ -12137,9 +12136,9 @@ textarea.form-control-lg {
 .sticker-section .degree-cards .degree-card .degree-title {
   margin: 0 0 0.55rem;
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   letter-spacing: 0.01em;
-  color: #212529;
+  color: #0281FB;
 }
 .sticker-section .degree-cards .degree-card .degree-list {
   margin: 0;

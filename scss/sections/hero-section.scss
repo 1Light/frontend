@@ -67,19 +67,41 @@
       z-index: 2;
       max-width: 90%;
 
-      .main {
-        font-size: 5.5rem;
-        font-weight:700;
-        margin-bottom: 2rem;
-        text-shadow: 0 8px 10px rgba(0, 0, 0, 0.6);
+.main {
+  font-size: 6.5rem; // bigger for more presence
+  font-weight: 900;  // extra bold
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #fff; // pure white for clarity against videod
 
-        span {
+  /* multi-layered shadow for 3D effect */
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,0.1),
+    0 0 5px rgba(0,0,0,0.1),
+    0 1px 3px rgba(0,0,0,0.3),
+    0 3px 5px rgba(0,0,0,0.2),
+    0 5px 10px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.2),
+    0 20px 20px rgba(0,0,0,0.15);
+
+  /* subtle glow to make it readable over bright video areas */
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+
+          span {
           color: $primary;
         }
-      }
+}
+      
 
-      h3 {
-        font-size: 2.5rem;
+      #sub {
+        font-size: 3.5rem;
         font-weight: 700;
         margin-bottom: 2rem;
         text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);

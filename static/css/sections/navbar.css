@@ -11922,7 +11922,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  gap: 1rem 3.5rem;
+  gap: 1rem 1.5rem;
   width: 100%;
 }
 .header-section .tabs-section ul.navbar-nav .nav-link, .header-section .tabs-section ul.navbar-nav .apply-button {

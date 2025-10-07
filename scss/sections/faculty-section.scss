@@ -52,7 +52,7 @@
       border-radius: 20px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.1);
       overflow: hidden;
-      height: 400px;                    // total card height (mobile/base)
+      height: 390px;                    // total card height (mobile/base)
 
       // Make the image fill the card height, always
       > img,
@@ -104,8 +104,8 @@
     // Desktop: show 3 cards, each 33.333%
     @media (min-width: 768px) {
       .carousel-inner { display: flex; }
-      .carousel-item  { flex: 0 0 33.333%; margin-right: 0; }
-      .card { height: 450px; } // taller cards on md+
+      .carousel-item  { flex: 0 0 25%; margin-right: 0; }
+      .card { height: 390px; } // taller cards on md+
     }
   }
 }

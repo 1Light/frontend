@@ -155,12 +155,11 @@
 
     .section-label {
       display: inline-block;
-      font-size: .82rem;
-      text-transform: uppercase;
-      letter-spacing: .14em;
-      color: $gray-600;
+      font-size: 1.5rem;
+      font-weight: 800;
       margin-bottom: .5rem;
       position: relative;
+      color: $primary;
 
       &::after {
         content: "";
@@ -216,9 +215,9 @@
       .degree-title {
         margin: 0 0 .55rem;
         font-weight: 800;
-        font-size: 1.05rem;
+        font-size: 1.5rem;
         letter-spacing: .01em;
-        color: $gray-900;
+        color: $primary;
       }
 
       .degree-list {

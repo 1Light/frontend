@@ -11899,15 +11899,12 @@ textarea.form-control-lg {
 }
 
 .research-section {
-  margin-top: 3rem;
-  padding: 1rem 0;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   background-color: #EEF9FB;
-  padding-top: 3rem;
 }
 .research-section h1 {
   color: #0281FB;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-weight: 800;
   font-size: 3rem;
@@ -12016,7 +12013,7 @@ textarea.form-control-lg {
   gap: 0.4rem;
   text-decoration: none;
   font-weight: 600;
-  color: #0d6efd;
+  color: #795BD9;
   transition: gap 0.2s ease, color 0.2s ease;
 }
 .research-section .container .research-box .content-box .read-more i {

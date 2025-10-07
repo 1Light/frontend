@@ -11941,7 +11941,7 @@ textarea.form-control-lg {
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  height: 400px;
+  height: 390px;
 }
 .faculty-section #facultyCarousel .card > img,
 .faculty-section #facultyCarousel .card .card-img-top {
@@ -11986,11 +11986,11 @@ textarea.form-control-lg {
     display: flex;
   }
   .faculty-section #facultyCarousel .carousel-item {
-    flex: 0 0 33.333%;
+    flex: 0 0 25%;
     margin-right: 0;
   }
   .faculty-section #facultyCarousel .card {
-    height: 450px;
+    height: 390px;
   }
 }
 

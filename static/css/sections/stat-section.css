@@ -11899,10 +11899,10 @@ textarea.form-control-lg {
 }
 
 .stat-section {
-  margin-top: 3rem;
-  height: 50vh;
+  margin-bottom: 5rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  padding: 2rem;
+  padding-top: 3rem;
+  background-color: #EEF9FB;
 }
 .stat-section h1 {
   color: #0281FB;
@@ -11930,24 +11930,18 @@ textarea.form-control-lg {
   box-shadow: 0 2px 10px rgba(13, 110, 253, 0.25);
 }
 .stat-section .container .stat-circles {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 1.25rem;
-}
-@media (min-width: 768px) {
-  .stat-section .container .stat-circles {
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
-    gap: 1.5rem 2rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
 }
 .stat-section .container .stat-circles .circle {
   --size: clamp(200px, 28vw, 240px);
   width: var(--size);
   height: var(--size);
-  border: 2px double #fff;
+  border: 5px double #002554;
   border-radius: 50%;
-  background: radial-gradient(120% 120% at 30% 20%, #8a73e6 0%, #6f42c1 35%, #4b2da6 100%);
+  background: #fff;
   box-shadow: 0 12px 28px rgba(30, 12, 80, 0.25), 0 2px 0 rgba(255, 255, 255, 0.12) inset;
   /* perfect centering stack */
   display: flex;
@@ -11965,6 +11959,19 @@ textarea.form-control-lg {
   background: radial-gradient(140% 140% at 50% 50%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 60%);
   pointer-events: none;
 }
+.stat-section .container .stat-circles .circle::after {
+  content: "";
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  height: 22px;
+  background: radial-gradient(ellipse at center, rgba(89, 89, 89, 0.3) 0%, rgba(0, 0, 0, 0) 80%);
+  border-radius: 50%;
+  filter: blur(2px);
+  z-index: -1;
+}
 .stat-section .container .stat-circles .circle {
   transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
@@ -11975,14 +11982,14 @@ textarea.form-control-lg {
 }
 .stat-section .container .stat-circles .circle i {
   font-size: clamp(1.8rem, 3.5vw, 2.4rem);
-  color: #fff;
+  color: #002554;
   margin-bottom: 0.4rem; /* space below icon */
 }
 .stat-section .container .stat-circles .circle p {
   margin: 0;
   text-align: center;
   line-height: 1.2;
-  color: #fff;
+  color: #002554;
   font-weight: 600;
 }
 .stat-section .container .stat-circles .circle p.value {
