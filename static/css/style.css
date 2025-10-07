@@ -12340,6 +12340,7 @@ body {
   padding: 2rem;
   border-radius: 15px;
   background-color: #EEF9FB;
+  border-radius: 35px;
 }
 .research-section .container .research-grid {
   display: grid;
