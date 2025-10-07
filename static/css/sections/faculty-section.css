@@ -11942,6 +11942,7 @@ textarea.form-control-lg {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   height: 390px;
+  border: 2px solid #795BD9;
 }
 .faculty-section #facultyCarousel .card > img,
 .faculty-section #facultyCarousel .card .card-img-top {
@@ -11950,6 +11951,15 @@ textarea.form-control-lg {
   object-fit: cover;
   display: block;
   image-orientation: from-image;
+}
+.faculty-section #facultyCarousel .card .img-wrapper {
+  width: 290px;
+  height: 500px;
+}
+.faculty-section #facultyCarousel .card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .faculty-section #facultyCarousel .card .card-body {
   position: absolute;
@@ -11980,6 +11990,7 @@ textarea.form-control-lg {
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
+  background-color: #0281FB;
 }
 @media (min-width: 768px) {
   .faculty-section #facultyCarousel .carousel-inner {

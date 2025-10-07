@@ -53,6 +53,7 @@
       box-shadow: 0 8px 24px rgba(0,0,0,0.1);
       overflow: hidden;
       height: 390px;                    // total card height (mobile/base)
+      border: 2px solid $tertiary;
 
       // Make the image fill the card height, always
       > img,
@@ -62,6 +63,17 @@
         object-fit: cover;
         display: block;
         image-orientation: from-image;  // handles EXIF-rotated photos
+      }
+
+      .img-wrapper {
+        width: 290px;
+        height: 500px;
+
+        img {
+                  width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
       }
 
       // Overlayed text panel
@@ -99,6 +111,8 @@
       border-radius: 50%;
       top: 50%;
       transform: translateY(-50%);
+      background-color: $primary;
+
     }
 
     // Desktop: show 3 cards, each 33.333%

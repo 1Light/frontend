@@ -11989,6 +11989,7 @@ textarea.form-control-lg {
 }
 .site-footer .footer-grid .footer-contact .footer-social a {
   display: grid;
+  text-decoration: none;
   place-items: center;
   width: 36px;
   height: 36px;
